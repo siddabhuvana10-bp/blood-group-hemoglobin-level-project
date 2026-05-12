@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Blood Group and Hemoglobin Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="logo">
+        🩸
+    </div>
+
+    <h1>Blood Groups and Hemoglobin Levels</h1>
+
+    <div class="about">
+
+        <h2>About Project</h2>
+
+        <p>
+            This project analyzes blood groups and hemoglobin levels among students.
+            It helps identify common blood groups and detect low hemoglobin conditions.
+        </p>
+
+    </div>
+
+    <div class="form-box">
+
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <select id="blood">
+            <option>A+</option>
+            <option>B+</option>
+            <option>O+</option>
+            <option>AB+</option>
+            <option>A-</option>
+            <option>B-</option>
+            <option>O-</option>
+            <option>AB-</option>
+        </select>
+
+        <input type="number" id="hb" placeholder="Hemoglobin Level">
+
+        <button onclick="addData()">Submit</button>
+
+    </div>
+
+    <div class="stats">
+
+        <h2 id="totalStudents">Total Students: 0</h2>
+
+        <h2 id="averageHb">Average Hb: 0</h2>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Student"
+            onkeyup="searchData()"
+        >
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Blood Group</th>
+                <th>Hb Level</th>
+                <th>Status</th>
+                <th>Delete</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+    <div class="chart-box">
+
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+    <div class="chart-box">
+
+        <canvas id="pieChart"></canvas>
+
+    </div>
+
+    <div class="about">
+
+        <h2>Health Tips</h2>
+
+        <ul>
+            <li>Eat iron rich foods</li>
+            <li>Drink enough water</li>
+            <li>Exercise regularly</li>
+            <li>Maintain balanced diet</li>
+        </ul>
+
+    </div>
+
+    <div class="about">
+
+        <h2>Conclusion</h2>
+
+        <p>
+            This project successfully analyzed blood groups and hemoglobin levels among students.
+            It helps in understanding health conditions and anemia awareness.
+        </p>
+
+    </div>
+
+    <footer>
+
+        <p>
+            CSP Project on Blood Groups and Hemoglobin Levels
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
